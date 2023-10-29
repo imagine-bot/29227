@@ -4,6 +4,7 @@ type User = {
   name: string;
   email: string;
   phone: string;
+  address: string;
 };
 
 type UserListProps = {
@@ -18,6 +19,7 @@ export const UserList: React.FC<UserListProps> = ({ users }) => {
           <th>Name</th>
           <th>Email</th>
           <th>Phone</th>
+          <th>Address</th>
         </tr>
       </thead>
       <tbody>
@@ -26,6 +28,7 @@ export const UserList: React.FC<UserListProps> = ({ users }) => {
             <td>{user.name}</td>
             <td>{user.email}</td>
             <td>{user.phone}</td>
+            <td>{user.address}</td>
           </tr>
         ))}
       </tbody>

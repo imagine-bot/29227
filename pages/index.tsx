@@ -11,7 +11,9 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24`}
     >
-      <UserList users={users} />
+      <div className="w-full max-w-4xl mx-auto">
+        <UserList users={users} />
+      </div>
     </main>
   )
 }
